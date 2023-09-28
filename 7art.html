@@ -28,7 +28,7 @@
                         <circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/>
                     </svg>
                 </a>
-                <a class="botao-registrar btn btn-sm btn-outline-secondary" href="#">Registrar-se</a>
+                <a class="botao-registrar btn btn-sm btn-outline-secondary"  data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Registrar-se</a>
             </div>
         </div>
     </header>
@@ -67,6 +67,34 @@
   </div>
 </nav>
     <!-- End Navbar -->
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registre-se! </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          Email <br>
+          <input type="email" id="email">
+          <br>
+          Nova Senha <br>
+          <input type="password" id="senha">
+          <br>
+          Repita a Senha<br>
+          <input type="password" id="repitasenha">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Cadastrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- End Modal -->
 </div>
 
 <main class="container">
