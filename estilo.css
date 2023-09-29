@@ -1,8 +1,9 @@
 .link-login, .link-busca {
+    font-weight: bold;
     text-decoration: none;
     color: #333;
-    margin-right: 20px;
 }
+
 
 .blog-logo {
     font-size: 24px;
@@ -46,3 +47,26 @@
     margin-left: 30px;
 }
 
+
+#acessibilidade {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  #acessibilidade a {
+    margin-left: 10px; /* Adicione margem à esquerda dos links */
+  }
+  
+  @media (max-width: 768px) {
+    #acessibilidade {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    #acessibilidade a {
+      margin-left: 0; /* Remova a margem à esquerda dos links */
+      margin-top: 10px; /* Adicione margem superior entre os links em telas menores */
+    }
+  }
+  
