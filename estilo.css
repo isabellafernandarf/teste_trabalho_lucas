@@ -1,0 +1,48 @@
+.link-login, .link-busca {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+}
+
+.blog-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilo para os modais */
+.modal-header {
+    background-color: #021d61;
+    color: #fff;
+}
+
+.modal-footer {
+    background-color: #021d61;
+}
+
+/* Estilo para o botão Registrar */
+.botao-registrar {
+    background-color: #007bff;
+    color: #ffff;
+    border: none;
+}
+
+.botao-registrar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para a Navbar */
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+/* Estilo para os links da Navbar */
+.nav-item {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
