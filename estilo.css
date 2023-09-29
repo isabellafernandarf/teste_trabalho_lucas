@@ -1,72 +1,73 @@
 .link-login, .link-busca {
-    font-weight: bold;
-    text-decoration: none;
+    font-weight: bold; /*fonte como negrito */
+    text-decoration: none; /* Remove o sublinhado*/
     color: #333;
 }
 
-
 .blog-logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 24px; /*tamanho da fonte*/
+    font-weight: bold; /*fonte como negrito */
 }
 
-/* Estilo para os modais */
+/* Estilo para os elementos de cabeçalho dos modais */
 .modal-header {
     background-color: #021d61;
     color: #fff;
 }
 
+/* Estilo para o rodapé dos modais */
 .modal-footer {
     background-color: #021d61;
 }
 
-/* Estilo para o botão Registrar */
 .botao-registrar {
     background-color: #007bff;
     color: #ffff;
-    border: none;
+    border: none; /* Remove a borda*/
 }
 
 .botao-registrar:hover {
     background-color: #0056b3;
 }
 
-/* Estilo para a Navbar */
+/* Estilo para a barra de navegação (navbar) */
 .navbar {
     background-color: #f8f9fa;
 }
 
+
 .navbar-brand {
-    font-weight: bold;
-    margin-left: 30px;
+    font-weight: bold; /* negrito */
+    margin-left: 30px; /* margem esquerda */
 }
 
-/* Estilo para os links da Navbar */
 .nav-item {
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 30px; /* margem direita */
+    margin-left: 30px; /* margem esquerda */
 }
 
-
+/* cabeçalho */
 #acessibilidade {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  #acessibilidade a {
-    margin-left: 10px; /* Adicione margem à esquerda dos links */
-  }
-  
-  @media (max-width: 768px) {
+    display: flex; /* para alinhar os itens */
+    justify-content: flex-end; /* Alinha os itens à direita do contêiner */
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+
+#acessibilidade a {
+    margin-left: 10px; /* margem à esquerda entre os links */
+}
+
+/*telas menores*/
+@media (max-width: 768px) {
+    /* Altera a direção do flexbox para coluna e alinha os itens à direita */
     #acessibilidade {
-      flex-direction: column;
-      align-items: flex-end;
+        flex-direction: column;
+        align-items: flex-end;
     }
-  
+
+    /* Remove a margem à esquerda dos links e adiciona margem superior entre eles */
     #acessibilidade a {
-      margin-left: 0; /* Remova a margem à esquerda dos links */
-      margin-top: 10px; /* Adicione margem superior entre os links em telas menores */
+        margin-left: 0;
+        margin-top: 10px;
     }
-  }
-  
+}
