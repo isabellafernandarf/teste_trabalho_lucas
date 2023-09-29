@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Seu Nome">
     <title>Artigos</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> <!-- JS para funcionar accordion -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> <!-- JS para funcionar modal -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css">
     <link href="blog.css" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
@@ -18,20 +18,20 @@
     <header class="border-bottom text-center py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
             <div class="col-4 pt-1">
-                <a class="link-assinar" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+                <a class="link-assinar" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
             </div>
             <div class="col-4">
-                <a class="blog-logo text-corpo text-decoration-none" href="#">Artigos Científicos</a>
+                <a class="blog-logo text-corpo text-decoration-none">Artigos Científicos</a>
             </div>
             <div class="col-4 d-flex justify-content-end align-items-center">
-                <a class="link-busca" href="#" aria-label="Pesquisar">
+                <a class="link-busca" aria-label="Pesquisar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
                          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
                          viewBox="0 0 24 24"><title>Pesquisar</title>
                         <circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/>
                     </svg>
                 </a>
-                <a class="botao-registrar btn btn-sm btn-outline-secondary" href="#" data-bs-toggle="modal" data-bs-target="#modalCadastro">Cadastre-se</a>
+                <a class="botao-registrar btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalCadastro">Cadastre-se</a>
             </div>
         </div>
     </header>
@@ -201,18 +201,15 @@
         <div class="col-md-6">
             <div class="card card-destaque border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="card-body">
-                    <strong class="categoria-destaque d-inline-block mb-2 text-cor-destaque">Artigos</strong>
-                    <h3 class="titulo-card">Artigo 01</h3>
-                    <div class="data-card text-corpo-secundario">Data</div>
-                    <p class="texto-card">Descrição</p>
+                    <strong class="categoria-destaque d-inline-block mb-2 text-cor-destaque">Artigo 01</strong>
+                    <h3 class="titulo-card">Journal of Public Health</h3><br>
                     <!-- Botão para abrir o modal do Artigo 1 -->
                     <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
                             data-bs-target="#modalArtigo1">
                         Ler resumo...
                     </button>
                 </div>
-                <img src="https://via.placeholder.com/200" alt="Imagem do post" class="imagem-destaque"
-                     width="250" height="250">
+                <img src="img/a1.jpg" alt="Journal of Public Health" class="imagem-destaque" width="250" height="250">
             </div>
         </div>
         <!-- Fim Artigo 1 -->
@@ -221,18 +218,15 @@
         <div class="col-md-6">
             <div class="card card-destaque border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="card-body">
-                    <strong class="categoria-destaque d-inline-block mb-2 text-cor-emfase">Artigos</strong>
-                    <h3 class="titulo-card">Artigo 02</h3>
-                    <div class="data-card text-corpo-secundario">Data</div>
-                    <p class="texto-card">Descrição</p>
+                    <strong class="categoria-destaque d-inline-block mb-2 text-cor-emfase">Artigo 02</strong>
+                    <h3 class="titulo-card">Ciência e Saúde Coletiva</h3><br>
                     <!-- Botão para abrir o modal do Artigo 2 -->
                     <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
                             data-bs-target="#modalArtigo2">
                         Ler resumo...
                     </button>
                 </div>
-                <img src="https://via.placeholder.com/200" alt="Imagem do post" class="imagem-destaque"
-                     width="250" height="250">
+                <img src="img/a2.jpg" alt="Ciência e Saúde Coletiva" class="imagem-destaque" width="250" height="250">
             </div>
         </div>
         <!-- Fim Artigo 2 -->
@@ -242,17 +236,14 @@
             <div class="card card-destaque border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="card-body">
                     <strong class="categoria-destaque d-inline-block mb-2 text-cor-emfase">Artigos</strong>
-                    <h3 class="titulo-card">Artigo 03</h3>
-                    <div class="data-card text-corpo-secundario">Data</div>
-                    <p class="texto-card">Descrição</p>
+                    <h3 class="titulo-card">National Library of Medicine</h3><br>
                     <!-- Botão para abrir o modal do Artigo 3 -->
                     <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
                             data-bs-target="#modalArtigo3">
                         Ler resumo...
                     </button>
                 </div>
-                <img src="https://via.placeholder.com/200" alt="Imagem do post" class="imagem-destaque"
-                     width="250" height="250">
+                <img src="img/a3.jpg" alt="National Library of Medicine" class="imagem-destaque" width="250" height="250">
             </div>
         </div>
         <!-- Fim Artigo 3 -->
@@ -261,8 +252,8 @@
         <div class="col-md-6">
             <div class="card card-destaque border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="card-body">
-                    <strong class="categoria-destaque d-inline-block mb-2 text-cor-emfase">Artigos</strong>
-                    <h3 class="titulo-card">Artigo 04</h3>
+                    <strong class="categoria-destaque d-inline-block mb-2 text-cor-emfase">Artigo 04</strong>
+                    <h3 class="titulo-card">National Library of Medicine</h3>
                     <div class="data-card text-corpo-secundario">Data</div>
                     <p class="texto-card">Descrição</p>
                     <!-- Botão para abrir o modal do Artigo 4 -->
@@ -271,7 +262,7 @@
                         Ler resumo...
                     </button>
                 </div>
-                <img src="https://via.placeholder.com/200" alt="Imagem do post" class="imagem-destaque"
+                <img src="img/a4.jpg" alt="Imagem do post" class="imagem-destaque"
                      width="250" height="250">
             </div>
         </div>
@@ -281,8 +272,8 @@
         <div class="col-md-6">
             <div class="card card-destaque border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="card-body">
-                    <strong class="categoria-destaque d-inline-block mb-2 text-cor-emfase">Artigos</strong>
-                    <h3 class="titulo-card">Artigo 05</h3>
+                    <strong class="categoria-destaque d-inline-block mb-2 text-cor-emfase">Artigo 05</strong>
+                    <h3 class="titulo-card">National Library of Medicine</h3>
                     <div class="data-card text-corpo-secundario">Data</div>
                     <p class="texto-card">Descrição</p>
                     <!-- Botão para abrir o modal do Artigo 5 -->
@@ -350,14 +341,19 @@
                 </div>
                 <div class="modal-body">
                     <!-- Conteúdo do Artigo 1 -->
-                    <h2>Título do Artigo 01</h2>
-                    <p>Data: Data do Artigo</p>
-                    <p>Aqui vai o conteúdo completo do Artigo 01.</p>
+                    <h2>Qualidade de vida relacionada à saúde e seus fatores associados: 
+                        resultados de um estudo transversal multicêntrico entre universitários.</h2>
+                    <p><i>26 Fevereiro de 2019</i></p>
+                    <p><b>Métodos:</b> Foi aplicado um questionário para avaliar os hábitos alimentares: consumo de azeite, legumes, frutas, carne vermelha/branca, peixe e doces. Estudo transversal multicêntrico - realizado em 3 universidades italianas entre 2016 e 2017. Coleta de dados: sala de aula. Foi aplicado uma questão se era fumante ou não e para indicar quantos dias fumou nos últimos 30 dias. Aplicado o questionário SF-12 para avaliar a qualidade de vida relacionada à saúde QVRS.Amostra: 1684 alunos 
+
+                        <p><b>Análise estatística:</b> médias e desvio padrão para as variáveis contínuas como idade e porcentagens para variáveis categóricas, como gênero. Também utilizou-se testes t, Cohen's d (d) e Eta ao quadrado (n2). Modelo de regressão linear múltipla. R ao quadrado. Analisados com o SPSS.</p>
+                        
+                        <b>Resultados:</b> Pontuações de saúde mental foram significativamente mais baixas entre as mulheres. As mulheres se estressam mais do que os homens.</p>
                     <!-- Fim do Conteúdo do Artigo 1 -->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Acessar artigo</button>
+                    <a href="https://academic.oup.com/jpubhealth/article/42/2/285/5365450?login=false"><button type="button" class="btn btn-primary">Acessar artigo</button></a>
                 </div>
             </div>
         </div>
@@ -374,14 +370,23 @@
                 </div>
                 <div class="modal-body">
                     <!-- Conteúdo do Artigo 2 -->
-                    <h2>Título do Artigo 02</h2>
-                    <p>Data: Data do Artigo</p>
-                    <p>Aqui vai o conteúdo completo do Artigo 02.</p>
+                    <h2>Qualidade de vida relacionada à saúde entre adultos e fatores associados: Um estudo de base populacional</h2>
+                    <p><i>07 de Maio de 2015</i></p>
+                    <p><p><b>Contexto:</b> A dimensão alargada da saúde e a sua relação com vários aspetos positivos e negativos da vida permitem diversas formas de avaliação, levando os indivíduos com as mesmas doenças a manifestarem diferentes níveis de saúde e bem-estar físico e/ou emocional.</p>
+
+                    <p><b>Métodos:</b> estudo transversal analítico realizado com adultos de 35 a 44 anos no município de Montes Claros, considerada a principal cidade do norte do estado de Minas Gerais. Amostra: 841 adultos. Os questionários aplicados foram: SF-12 e SF-36. O instrumento é composto por 12 itens que avaliam as dimensões: capacidade funcional, aspectos físicos, dor, estado geral de saúde, vitalidade, aspectos sociais, aspectos emocionais e saúde mental, considerando a percepção do indivíduo em relação aos aspectos de sua vida nas últimas quatro semanas. As variáveis independentes foram agrupadas em três grupos: características sociodemográficas, características relacionadas à saúde e características comportamentais. Características sociodemográficas: sexo, idade, estado civil, cor autodeclarada, escolaridade, renda, trabalho atual, residência e se a família possui carro. Coleta de dados: As entrevistas foram realizadas nos domicílios onde se encontravam adultos na faixa etária escolhida. Utilizado o software SPSS para análise dos dados.</p>
+                    
+                    <p><b>Resultados:</b> Encontrou-se pequena predominância do gênero feminino. Nas características relacionadas à saúde e comportamento, a maioria afirmou não ter utilizado serviços odontológicos no último ano, não ser portador de doença crônica, não tomar medicamentos diariamente, não fazer uso de tabaco e bebidas alcoólicas e nunca ou raramente praticar atividades físicas (tabela 1).</p>
+                    
+                    <p><b>Discussões:</b> O uso diário de medicamentos e o hábito de fumar associaram-se a menores níveis de QVRS. Esta pesquisa evidenciou alto percentual de baixa QVRS entre os adultos, pois mais da metade dos sujeitos investigados (57%) apresentou percepção negativa da QVRS.</p>
+                    
+                    <p><b>Conclusão:</b> A alta prevalência (57%) de efeito adverso na QVRS entre adultos da comunidade em geral é preocupante. Verificou-se que ser do sexo masculino, ter carro na família, ter usado recentemente serviços odontológicos, não ser portador de doença crônica, não fazer uso diário de medicamentos, não ser fumante e praticar atividades físicas estiveram relacionados a níveis mais elevados na APS da QVRS. Além disso, não fazer uso de medicação diária e não ser fumante associaram-se a níveis mais elevados no MHC da QVRS. A população adulta, por sua importância social e econômica, merece maior atenção de estudos e incremento de políticas voltadas para a manutenção e/ou recuperação de seu bem-estar físico e mental.</p>
+                    </p>
                     <!-- Fim do Conteúdo do Artigo 2 -->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Acessar artigo</button>
+                    <a href="https://www.scielo.br/j/csc/a/TDZ6LjcXpgc3RS3ZQddkVtP/?lang=en&format=pdf"><button type="button" class="btn btn-primary">Acessar artigo</button></a>
                 </div>
             </div>
         </div>
@@ -398,14 +403,18 @@
                 </div>
                 <div class="modal-body">
                     <!-- Conteúdo do Artigo 3 -->
-                    <h2>Título do Artigo 03</h2>
-                    <p>Data: Data do Artigo</p>
-                    <p>Aqui vai o conteúdo completo do Artigo 03.</p>
+                    <h2>Compulsão alimentar, ortorexia nervosa, restrição alimentar e qualidade de vida: um estudo populacional no Líbano</h2>
+                    <p><i>26 de Fevereiro de 2021</i></p>
+                    <p><p><b>Objetivo:</b> Avaliar a implicação dos comportamentos de risco para os transtornos alimentares (DEBs) na qualidade de vida (QV) de uma amostra da população libanesa, após ajuste sobre as características sociodemográficas desses participantes.</p>
+
+                    <p><b>Métodos:</b> População: 811 participantes da comunidade libanesa. Questionário aplicado: WHOQOL-BREF, com 4 domínios. O questionário foi aplicado de forma física, distribuídos nas residências com público acima de 18 anos. Na primeira parte vinham questões socioedemográficas: idade, sexo, escolaridade, renda mensal e índice de massa corporal. Foi calculado o IMC dividindo o peso por altura. Logo em seguida, foi aplicado o questionário WHOQOL-BREF para medir a qualidade de vida.</p>
+                    
+                    <p><b>Resultados:</b> um escore de QV de saúde física significativamente mais baixo foi associado ao aumento da idade, aumento do IMC, maior insatisfação corporal, maior compulsão alimentar, maior ansiedade, maior depressão e maior estresse percebido.</p></p>
                     <!-- Fim do Conteúdo do Artigo 3 -->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Acessar artigo</button>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/31849002/"><button type="button" class="btn btn-primary">Acessar artigo</button></a>
                 </div>
             </div>
         </div>
@@ -422,14 +431,19 @@
                 </div>
                 <div class="modal-body">
                     <!-- Conteúdo do Artigo 4 -->
-                    <h2>Título do Artigo 04</h2>
-                    <p>Data: Data do Artigo</p>
-                    <p>Aqui vai o conteúdo completo do Artigo 04.</p>
+                    <h2>Estabilidade das reduções pós-tratamento no mundo da saúde Funcionamento pós-tratamento em adultos mais velhos com DSM-5 Estudo para Idosos</h2>
+                    <p><i>03 de Março de 2021</i></p>
+                    <p><p><b>Objetivo:</b> O objetivo deste estudo foi investigar se as reduções pós-tratamento nos níveis de risco de beber da OMS são estáveis ao longo do tempo entre adultos mais velhos e associadas a uma diminuição das inconsequências do consumo de álcool e sintomas de transtornos do uso de álcool (AUD) e melhora da qualidade de vida.</p>
+
+
+                    <p><b>Métodos:</b> Este estudo é uma análise secundária dos dados do Elderly Study; um ensaio clínico randomizado controlado em vários locais que examinou e comparou 2 intervenções psicossociais destinadas ao tratamento de AUD entre indivíduos com mais de 60 anos. Um total de 693 indivíduos com mais de 60 anos de idade em busca de tratamento para Alcoolismo foram incluídos no estudo de 3 países: Dinamarca, Alemanha e Estados Unidos. Foram excluídos do estudo participantes que demonstraram sinais de depressão, transtorno de bipolaridade, comprometimento cognitivo, pensamentos suicidas, entre outros.</p>
+                    
+                    <p><b>Resultados:</b> No geral, os participantes eram em sua maioria do sexo masculino (60%), com idade média de 65,6 anos. A análise comparando aqueles que completaram todos avaliações de acompanhamento para aqueles que falharam em completar pelo menos 1 acompanhamento mostraram que os que completaram eram um pouco mais jovens e tinham uma pontuação ambiental WHOQOL-BREF ligeiramente mais alta; caso contrário, nenhuma diferença foi encontrada. Especificamente, na análise de sensibilidade excluindo os abstêmios, descobriu-se que alcançar uma redução de pelo menos 1 ou 2 níveis ao longo do tempo estava associado a resultados de consumo de bebida significativamente reduzidos e pontuação DrInC, e aumentos significativos, embora pequenos, nos domínios psicológicos, sociais e ambientais do WHOQOL-BREF , descrevendo alterações na qualidade de vida.</p></p>
                     <!-- Fim do Conteúdo do Artigo 4 -->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Acessar artigo</button>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/33496964/"><button type="button" class="btn btn-primary">Acessar artigo</button></a>
                 </div>
             </div>
         </div>
@@ -446,14 +460,20 @@
                 </div>
                 <div class="modal-body">
                     <!-- Conteúdo do Artigo 5 -->
-                    <h2>Título do Artigo 05</h2>
-                    <p>Data: Data do Artigo</p>
-                    <p>Aqui vai o conteúdo completo do Artigo 05.</p>
+                    <h2>O vínculo conscienciosidade-saúde na depressão: resultados de uma análise de caminho</h2>
+                    <p><i>16 de Setembro de 2021</i></p>
+                    <p><p><b>Objetivo:</b> Este estudo teve como objetivo desenvolver um modelo baseado em teoria para testar a relação entre conscienciosidade e saúde física prejudicada, bem como a relação entre conscienciosidade e bem-estar subjetivo relacionado à saúde usando modelagem de equações estruturais. Indivíduos conscientes indicam níveis mais elevados de satisfação com a vida e qualidade de vida (DeNeve e Cooper, 1998; Smith et al., 2013, Soto e Luhmann, 2013; Steel et al., 2008).</p>
+
+
+                    <p><b>Métodos:</b> O estudo foi realizado em um centro de reabilitação psiquiátrica na Áustria. Estão disponíveis dados de 1.447 indivíduos em tratamento intensivo de reabilitação psiquiátrica entre abril de 2015 e fevereiro de 2017. Para medir a gravidade dos sintomas depressivos, foi utilizado o Inventário de Depressão de Becks e WHOQOL-BREF.</p>
+                    
+                    
+                    <p><b>Resultados:</b> As análises de equações estruturais revelaram uma relação positiva entre consciência e bem-estar relacionado à saúde. O consumo de álcool não influenciou nem o bem-estar relacionado à saúde</p></p>
                     <!-- Fim do Conteúdo do Artigo 5 -->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Acessar artigo</button>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/34706436/"><button type="button" class="btn btn-primary">Acessar artigo</button></a>
                 </div>
             </div>
         </div>
@@ -470,14 +490,19 @@
                 </div>
                 <div class="modal-body">
                     <!-- Conteúdo do Artigo 6 -->
-                    <h2>Título do Artigo 06</h2>
-                    <p>Data: Data do Artigo</p>
-                    <p>Aqui vai o conteúdo completo do Artigo 06.</p>
+                    <h2>Qualidade de vida e fatores de risco para doenças crônicas não transmissíveis entre médicos em Tomsk Oblast</h2>
+                    <p><i>24 de Novembro de 2021</i></p>
+                    <p><p><b>Objetivo:</b> compensar a falta de conhecimento sobre os mecanismos de interação entre Fatores de Risco para indicadores de Doenças Crônicas Não Transmissíveis e QV em médicos, e destacar os fatores de risco mais significativos e os parâmetros de QV susceptíveis para outros programas preventivos.</p>
+
+                    <p><b>Métodos:</b> o público-alvo foram médicos deTomsk Oblast. Foi realizado um estudo comparativo de um estágio realizado anteriormente, com um número total de 5913 médicos. O presente estudo selecionou aleatoriamente 1/4 dessa amostra anterior para fazer uma nova pesquisa. O questionário aplicado foi o WHOQOL-BREF.</p>
+                    
+                    
+                    <p><b>Resultados:</b> o maior valor médio obtido foi em relações sociais, seguido de saúde física. Nutrição pobre/inadequada foi registrada em mais da metade dos médicos. O sedentarismo foi registrado em quase 45,7% dos entrevistados (n=762). O excesso de peso corporal foi característico de 34,7% dos médicos (n=388). Estudos adicionais serão necessários, tendo em vista as limitações da pesquisa. Apenas 1/4 de médicos aleatórios. Não foi levado em consideração se o médico trabalhava em hospital ou policlínica. Necessidade do desenvolvimento de programas preventivos especiais para os médicos.</p></p>
                     <!-- Fim do Conteúdo do Artigo 6 -->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Acessar artigo</button>
+                    <a href="https://romj.org/2021-0414"><button type="button" class="btn btn-primary">Acessar artigo</button></a>
                 </div>
             </div>
         </div>
@@ -494,14 +519,20 @@
                 </div>
                 <div class="modal-body">
                     <!-- Conteúdo do Artigo 7 -->
-                    <h2>Título do Artigo 07</h2>
-                    <p>Data: Data do Artigo</p>
-                    <p>Aqui vai o conteúdo completo do Artigo 07.</p>
+                    <h2>Fatores associados à qualidade de vida dos adolescentes</h2>
+                    <p><i>21 de Julho de 2020</i></p>
+                    <p><p><b>Objetivo:</b> analisar a QV relacionada à Saúde de adolescentes e suas associações com variáveis sociodemográficas, familiares, hábitos e comportamentos em saúde. Definição de QV usada no artigo como citação: “a percepção do indivíduo sobre sua posição na vida, no contexto da cultura e sistemas de valores em que vive, e em relação a seus objetivos, expectativas, padrões e preocupações”.</p>
+
+
+                    <p><b>Métodos:</b> estudo transversal realizado no IF Maranhão. Um pouco parecido com o WHOQOL, mas contém 10 dimensões e tem um diferencial para avaliar relações com os pais, ambiente escolar, bullying. População do estudo: 467 alunos adolescentes de 10 a 19 anos. Amostra: 289 alunos. Desfecho: qualidade de vida relacionada à saúde. O outro questionário foi de autoria própria, contendo questionamentos sociodemográficos e hábitos comportamentais, como SONO, ATIVIDADE FÍSICA, TABAGISMO, ÁLCOOL, USO DA INTERNET e PESO.</p>
+                    
+                    
+                    <p><b>Resultados:</b> A maioria das mulheres eram solteiras 98%, sem filhos, sem trabalho. Os hábitos e comportamentos de saúde dos participantes são apresentados na Tabela 2. Os adolescentes nunca consumiram álcool (77,9%) ou fumaram (98,6%), algumas vezes ou raramente praticaram atividade física (61,9%) e estavam sempre conectados à Internet (51,2%). Hábitos alimentares: a maioria consumia regularmente refrigerantes, doces e frituras. E em concordância, a maioria estava nada, pouco ou moderadamente satisfeitos com o peso. Para frutas e verduras, grande parte das respostas foram "às vezes".</p></p>
                     <!-- Fim do Conteúdo do Artigo 7 -->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Acessar artigo</button>
+                    <a href="https://acta-ape.org/article/fatores-associados-a-qualidade-de-vida-relacionada-a-saude-de-adolescentes/"><button type="button" class="btn btn-primary">Acessar artigo</button></a>
                 </div>
             </div>
         </div>
@@ -517,3 +548,4 @@
 
 </body>
 </html>
+
