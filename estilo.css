@@ -111,3 +111,8 @@ footer {
 .git a:hover {
     text-decoration: underline; /*sublinhado */
 }
+/* botão fechar modal */
+.btn-close {
+    background-color: #fff;
+}
+
