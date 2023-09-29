@@ -71,3 +71,43 @@
         margin-top: 10px;
     }
 }
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #fff;
+    color: #021d61; /* cor do texto*/
+    text-align: center; /* Centraliza*/
+    padding: 20px 0; /* Adiciona preenchimento de 20 pixels na parte superior e inferior */
+}
+
+.desenvolvedores {
+    display: flex; /* Usa o modelo flexbox para organizar os elementos */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+}
+
+.desenvolvedor {
+    margin: 0 10px; /* Adiciona margem horizontal de 10 pixels (esquerda e direita) */
+}
+
+.desenvolvedor a {
+    text-decoration: none; /* Remove a decoração de texto (sublinhado) */
+    color: #021d61; /* Define a cor do texto como azul escuro */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+/*quando passar o mouse*/
+.desenvolvedor a:hover {
+    text-decoration: underline; /*sublinhado */
+}
+
+/* git */
+.git a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #007bff; 
+    margin: 5px; /* margem ao redor dos links*/
+}
+
+/* quando passar o mouse */
+.git a:hover {
+    text-decoration: underline; /*sublinhado */
+}
